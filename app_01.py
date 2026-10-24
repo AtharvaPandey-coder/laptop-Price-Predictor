@@ -6,7 +6,13 @@ import shap
 
 
 ## Load the model
-pipe=pickle.load(open('pipe.pkl','rb'))
+
+try:
+    with open('pipe.pkl', 'rb') as f:
+        pipe = pickle.load(f)
+except Exception as e:
+    st.error(f"{type(e).__name__}: {e}")
+    st.stop()
 df=pickle.load(open('df.pkl','rb'))
 
 st.title('Laptop Price Predictor')
