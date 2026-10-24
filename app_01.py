@@ -267,29 +267,3 @@ if st.button('Compare laptop'):
             st.success(f"Laptop 2 is cheaper by {price1-price2}")
         else:
             st.info("Both laptops are similar priced")
-
-                        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
