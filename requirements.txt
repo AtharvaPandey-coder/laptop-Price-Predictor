@@ -1,8 +1,6 @@
 streamlit
 numpy
 pandas
-scikit-learn
+scikit-learn==1.5.2
 shap
-xgboost
-
-
+xgboost==2.1.4
